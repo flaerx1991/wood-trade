@@ -66,7 +66,7 @@
 
         $json = json_encode($data);
         
-        $slack_url = "https://hooks.slack.com/services/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";
+        $slack_url = "";
         $ch = curl_init($slack_url);
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
@@ -81,7 +81,7 @@
         $results = curl_exec($ch);
         curl_close($ch);
 
-        $slacktoken = "xoxp-2933831750999-2950752016948-2948584514851-70dacabb91335f9f489469d64636aa42";
+        $slacktoken = "";
         $header = array();
         $header[] = 'Content-Type: multipart/form-data';
 
