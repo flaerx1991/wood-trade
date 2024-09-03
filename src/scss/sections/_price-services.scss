@@ -1,0 +1,174 @@
+.wt-price-on-services{
+    position: relative;
+
+        &::before{
+            content: '';
+            width: 100%;
+            height: 265px;
+            background-color: #f3f3f2;
+            position: absolute;
+            top: -20px;
+
+            @media(min-width:$screen-sm-min){
+                height: 310px;
+            }
+        }
+    
+    .wt-container{
+
+        .wt-price-serv-text{
+            text-align: center;
+            position: relative;
+            line-height: 32px;
+
+            @media(min-width:$screen-sm-min){
+                line-height: 22px;
+                margin-bottom: 40px;
+                top: 35px;
+            }
+
+            @media (min-width:$screen-xl-min){
+                top: 50px;
+            }
+
+            .wt-price-span-1{
+                z-index: 1;
+                font-family: 'PFDC';
+                font-weight: 700;
+                color: $text1;
+                position: relative;
+                font-size: 35px;
+
+                @media(min-width:$screen-sm-min){
+                    font-size: 60px;
+                    
+                }
+
+                @media (min-width:$screen-xl-min){
+                    font-size: 80px;
+                }
+            }
+
+            .wt-price-span-2{
+                z-index: 0;
+                font-size: 35px;
+                font-family: 'PFDC';
+                font-weight: 700;
+
+                color: transparent;
+                -webkit-text-stroke-color: $text1;
+                -webkit-text-stroke-width: 1px;
+                position: relative;
+
+                @media(min-width:$screen-sm-min){
+                    font-size: 70px;
+                }
+
+                @media (min-width:$screen-xl-min){
+                    font-size: 100px;
+                }
+            }
+        }
+
+        .wt-price-serv-block{
+            margin-bottom: 40px;
+            
+
+            @media (min-width:$screen-sm-min){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            @media (min-width:$screen-xl-min){
+                padding: 20px;
+                gap: 40px;
+            }
+
+            .wt-block-price{
+                position: relative;
+                display: block;
+                padding: 40px 0;
+                margin-top: 30px;
+                background-color: $green1;
+                border-radius: 5px;
+                text-decoration: none;
+
+                @media (min-width:$screen-xl-min){
+                    padding-bottom: 90px;
+                }
+
+                @media (min-width:$screen-sm-min){
+                    padding-bottom: 130px;
+                }
+
+                .wt-price-p1{
+                    font-family: 'PFD';
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: $white;
+                    font-weight: 500;
+                    padding: 0 25px;
+                    text-align: center;
+
+                    @media (min-width:$screen-sm-min){
+                        padding: 0 20px;
+                    }
+
+                    @media (min-width:$screen-xl-min){
+                        padding: 0 55px;
+                    }
+                }
+
+                .wt-price-p2{
+                    position: relative;
+                    font-family: 'PFD';
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: $white;
+                    font-weight: 500;
+                    text-align: center;
+                    box-sizing: border-box;
+
+                    margin-top: 30px;
+                    padding: 0 25px;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        height: 2px;
+                        top: -15px;
+                        left: 0;
+                        right: 0;
+                        width: 100%;
+                        background-color: #63a85f;
+                    }
+
+                    @media (min-width:$screen-sm-min){
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        bottom: 20px;
+                        font-size: 30px;
+                        margin-top: 60px;
+                        padding: 0 55px;
+
+                        &::before{
+                            top: -25px;
+                        }
+                    }
+
+                    @media (min-width:$screen-xl-min){
+                        bottom: 40px;
+
+                        &::before{
+                            top: -35px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,186 @@
+.wt-out-services{
+    width: 100%;
+    position: relative;
+    margin: 80px 0 153px 0;
+
+    @media (min-width: $screen-sm-min) {
+        margin: 80px 0 90px 0;
+        padding: 40px 0 40px 0;
+    }
+    @media (min-width: $screen-contain-min) {
+        margin: 10px 0 136px 0;
+        padding: 70px 0 60px 0;
+    }
+
+    .wt-picture-block-services{
+        width: calc(55% + 145px);
+        height: 861px;
+        position: absolute;
+        right: 0;
+        top: -80px;
+        z-index: -1;
+        img{
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            -webkit-filter: contrast(1.4);
+            filter: contrast(1.4);
+
+            @media (min-width:$screen-sm-min){
+                display: unset;
+            }
+        }
+
+        @media (min-width:$screen-sm-min){
+            margin: 0;
+            width: calc(55% + 130px);
+            height: 566px;
+            top: -55px;
+        }
+
+        @media (min-width: $screen-contain-min) {
+            height: 680px;
+            top: -115px;
+        }
+
+        @media (min-width:$screen-lgx-min){
+            background-position: 0 49%;
+        }
+    }
+
+    .wt-green-block-services{
+        width: 100%;
+        height: calc(100% + 130px);
+        background: $green1;
+        position: absolute;
+        left: 0;
+        top:-80px;
+
+        @media(min-width:$screen-sm-min){
+            top: 0;
+            width: 48%;
+            height:100%;
+        }
+    }
+
+    .wt-container{
+
+        .wt-medium-block-text{
+            width: 8em;
+            position: relative;
+            left: 10px;
+
+            @media (min-width:$screen-sm-min){
+                top: 0;
+                left: 20px;
+            }
+            @media (min-width: $screen-contain-min) {
+                left: 0;    
+            }
+            p{
+                line-height: 33px;
+
+                @media (min-width:$screen-sm-min){
+                    line-height: 16px;
+                }
+
+                .wt-text-1{
+                    font-family: 'PFDC';
+                    font-size:35px;
+                    font-weight: 700;
+                    color: transparent;
+                    -webkit-text-stroke-color:$white;
+                    -webkit-text-stroke-width: 1px;
+                    @media (min-width:$screen-sm-min){
+                        font-size: 70px;
+                        height: 49px;
+                        line-height: 63px;
+                        display: block;
+                    }
+
+                    @media (min-width:$screen-xl-min){
+                        font-size: 100px;
+                    }
+                }
+            
+                .wt-text-2{
+                    font-family: 'PFDC';
+                    font-size:35px;
+                    font-weight: 700;
+                    color:$white;
+
+                    @media (min-width:$screen-sm-min){
+                        font-size: 60px;
+                        line-height: 0.8;
+                        // height: 0;
+                        display: block;
+                        top: -30px;
+                        position: relative;
+                    }
+
+                    @media (min-width:$screen-xl-min){
+                        font-size: 80px;
+                    }
+                }
+            }   
+        }
+
+        .wt-low-block-text{
+            width: 100%;
+            max-width: 300px;
+            height: 659px;
+            border-radius: 5px;
+            background-color: $white;
+            margin: 0 auto;
+            position: relative;
+
+            @media (min-width:$screen-sm-min){
+                max-width: 729px;
+                height: 292px;
+                margin: 0 0 0 0;
+            }
+            
+            @media (min-width:$screen-xl-min){
+                max-width: 901px;
+                height: 240px;
+                margin-left: 20px; 
+            }
+            @media (min-width: $screen-contain-min) {   
+                margin: 0 0 0 0;
+            }
+
+            .wt-block-text{
+                padding: 20px 20px 10px 20px;
+
+                @media (min-width:$screen-xl-min){
+                    padding: 30px 27px 30px 20px;
+                }
+    
+                h6{
+                    font-family: "PFD";
+                    font-size:20px;
+                    color: #373737;
+                    font-weight: 500;
+
+                    @media (min-width:$screen-sm-min){
+                        font-size: 24px;
+                    }
+                }
+
+                p{
+                    font-size: 18px;
+                    font-family: 'PFD';
+                    line-height: 26px;
+                    font-weight: 300;
+
+                    @media (min-width:$screen-xl-min){
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

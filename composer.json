@@ -1,0 +1,14 @@
+{
+    "require": {
+        "twig/twig": "^2.0",
+        "cocur/slugify": "^4.0",
+        "dompdf/dompdf": "^1.0"
+    },
+
+    "autoload": {
+        "classmap": ["app/classes"]
+    }
+
+
+
+}

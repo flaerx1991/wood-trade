@@ -1,0 +1,26 @@
+<section class="wt-cta-container" style="display: none;">
+   <div class="image-col">
+       <img src="{{ image_footer_contact.path }}" alt="{{ image_footer_contact.alt }}" loading="lazy">
+   </div>
+   <div class="form-text-col">
+       <div class="cta-heading">
+           <h2 class="transparent-text">{{ footer_contact_title_transperent }}</h2>
+            <p class="cta-subheading">{{ footer_contact_title }}</p>
+       </div>
+       <div class="cta-text-block">
+           <p>{{ footer_contact_text }}</p>
+       </div>
+       <div class="cta-mob-image">
+           <img src="{{ image_footer_contact_mobile.path }}" alt="{{ image_footer_contact_mobile.alt }}" loading="lazy">{#{{ image_footer_contact.alt }} /libs/img/trak-mobile.png#}
+       </div>
+       <div class="cta-form">
+           <form onclick="event.preventDefault()"><!--добавить редирект на страницу отправки action="/footer-contact-sand"-->
+               <fieldset>
+                   <input class="wtFooterContactFormInput" type="tel"  placeholder="{{ footer_contact_placeholder }}" >
+                   <button onclick="footerContactForm()">{{ footer_contact_contact_us }}</button>
+               </fieldset>
+           </form>
+       </div>
+   </div>
+</section>
+

@@ -1,0 +1,88 @@
+<section class="wt-accordion-menu">
+    <div class="wt-flex-container">
+        <div class="wt-flex-col1">
+            <div class="wt-img-block-ac">
+                <picture class="wt-background background-1 active">
+                    <source srcset="{{ image_main_accordion_1_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_main_accordion_1.path }}" type='image/png'>
+
+                    <source srcset="{{ image_main_accordion_tablet_1_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_main_accordion_tablet_1.path }}" type='image/png'>
+
+                    <img src="{{ image_main_accordion_tablet_1_webp.path }}" class="img-fluid" alt="{{ image_main_accordion_tablet_1.alt }}" loading="lazy">
+                </picture>
+
+                <picture class="wt-background background-2">
+                    <source srcset="{{ image_main_accordion_2_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_main_accordion_2.path }}" type='image/png'>
+
+                    <source srcset="{{ image_main_accordion_tablet_2_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_main_accordion_tablet_2.path }}" type='image/png'>
+
+                    <img src="{{ image_main_accordion_tablet_2_webp.path }}" class="img-fluid" alt="{{ image_main_accordion_tablet_2.alt }}" loading="lazy">
+                </picture>
+
+                <picture class="wt-background background-3">
+                    <source srcset="{{ image_main_accordion_3_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_main_accordion_3.path }}" type='image/png'>
+
+                    <source srcset="{{ image_main_accordion_tablet_3_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_main_accordion_tablet_3.path }}" type='image/png'>
+
+                    <img src="{{ image_main_accordion_tablet_3_webp.path }}" class="img-fluid" alt="{{ image_main_accordion_tablet_3.alt }}" loading="lazy">
+                </picture>
+            </div>
+        </div>
+        <div class="wt-flex-col2">
+            
+            <h2 class="wt-title-accordion">
+                <span class="wt-title-1">{{ main_accordion_title_1 }}</span>
+                <span class="wt-title-2">{{ main_accordion_title_2 }}</span>
+            </h2>
+            <ul class="wt-menu">
+                <li onclick="toggleFunc(this, '.background-1')" class="wt-menu-acc-element active">
+                    <h4>{{ main_accordion_item_1_title }}</h4>
+                    <div class="wt-text-accordion">
+                            <p class="wt-parag-accor">{{ main_accordion_item_1_p_1 }}</p>
+                            <p class="wt-parag-accor">{{ main_accordion_item_1_p_2 }}</p>
+                    </div>
+                    <div class="wt-accordion-image-block">
+                        <picture>
+                            <source srcset="{{ image_main_accordion_1_mobile_webp.path }}" type='image/webp'>
+                            <source srcset="{{ image_main_accordion_1_mobile.path }}" type='image/png'>
+                            <img src="{{ image_main_accordion_1_mobile.path }}" alt="{{ image_main_accordion_1.alt }}" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li  onclick="toggleFunc(this, '.background-2')" class="wt-menu-acc-element">
+                    <h4>{{ main_accordion_item_2_title }}</h4>
+                    <div class="wt-text-accordion">
+                        <p class="wt-parag-accor">{{ main_accordion_item_2_p_1 }}</p>
+                        <p class="wt-parag-accor">{{ main_accordion_item_2_p_2 }}</p>
+                    </div>
+                    <div class="wt-accordion-image-block">
+                        <picture>
+                            <source srcset="{{ image_main_accordion_2_mobile_webp.path }}" type='image/webp'>
+                            <source srcset="{{ image_main_accordion_2_mobile.path }}" type='image/png'>
+                            <img src="{{ image_main_accordion_2_mobile.path }}" alt="{{ image_main_accordion_2.alt }}" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+                <li onclick="toggleFunc(this, '.background-3')" class="wt-menu-acc-element">
+                    <h4>{{ main_accordion_item_3_title }}</h4>
+                    <div class="wt-text-accordion">
+                        <p class="wt-parag-accor">{{ main_accordion_item_3_p_1 }}</p>
+                        <p class="wt-parag-accor">{{ main_accordion_item_3_p_2 }}</p>
+                    </div>
+                    <div class="wt-accordion-image-block">
+                        <picture>
+                            <source srcset="{{ image_main_accordion_3_mobile_webp.path }}" type='image/webp'>
+                            <source srcset="{{ image_main_accordion_3_mobile.path }}" type='image/png'>
+                            <img src="{{ image_main_accordion_3_mobile.path }}" alt="{{ image_main_accordion_3.alt }}" loading="lazy">
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

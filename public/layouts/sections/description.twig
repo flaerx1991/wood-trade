@@ -1,0 +1,38 @@
+<section class="wt-description">
+    <div class="company">
+        <div class="left-info">
+            <div class="wt-image-container"><img class="wt-image-container-img" src="{{ image_desctiption_img.path }}" alt="{{ image_desctiption_img.alt }}" loading="lazy"></div>
+            
+            <div class="container-text-info">
+            <h3>{{ desctiption_specialization_title }}</h3>
+            {{ desctiption_ul_li| raw }}
+            </div>
+        </div>
+        <div class="right-info">
+            <div class="right-text">
+            <h4>{{ desctiption_short_about }}</h4>
+            <p>{{ desctiption_title | raw }}</p>
+            </div> 
+            <img src="{{ image_desctiption_img_modile.path }}" alt="{{ image_desctiption_img_modile.alt }}" loading="lazy">
+            <div class="right-p">
+
+            <p>
+                <span>{{ desctiption_text_title_1 | raw }}</span><br>
+                {{ desctiption_text1_p1 | raw }}
+            </p>
+            <p>
+                {{ desctiption_text1_p2 | raw }}
+            </p>
+            <p>
+                <span>{{ desctiption_text_title_2 | raw }}</span><br>
+                {{ desctiption_text2_p1 |raw }}
+            </p>
+            <p>
+                {{ desctiption_text2_p2 |raw }}
+            </p>
+
+            </div>
+        </div>
+    </div> 
+    <div class="green-block"></div>
+</section>

@@ -1,0 +1,25 @@
+<section class="wt-price-on-services">
+    <div class="wt-container">
+       <div class="wt-price-serv-text">
+           <p><span class="wt-price-span-1">{{ price_secvices_title_1 }}</span><br><span class="wt-price-span-2">{{ price_secvices_title_2 }}</span></p>
+       </div>
+       <div class="wt-price-serv-block container-services">
+
+            <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}wood-drying" title="{{ price_secvices_goods1_title }}" class="wt-block-price">
+                <p class="wt-price-p1"><span>{{ price_secvices_goods1_title }}</span></p>
+                <p class="wt-price-p2">{{ price_secvices_goods1_price }}</p>
+            </a>
+
+            <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}grinding-and-calibration" title="{{ price_secvices_goods2_title }}" class="wt-block-price">
+                <p class="wt-price-p1"><span>{{ price_secvices_goods2_title }}</span></p>
+                <p class="wt-price-p2">{{ price_secvices_goods2_price }}</p>
+            </a>
+
+            <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}sawing-wood" title="{{ price_secvices_goods3_title }}" class="wt-block-price">
+                <p class="wt-price-p1"><span>{{ price_secvices_goods3_title }}</span></p>
+                <p class="wt-price-p2">{{ price_secvices_goods3_price }}</p>
+            </a>
+
+       </div>
+    </div>
+</section>

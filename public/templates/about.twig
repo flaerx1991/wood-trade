@@ -1,0 +1,23 @@
+{{ include('@static/header.twig') }}
+
+{{ include('@sections/breadcrumbs.twig') }}
+
+{{ include('@sections/woodtrade-info.twig') }}
+
+<section class="wt-certificate-slider">
+    <div class="wt-close-slider"></div>
+    <div class="wt-slider-wrap">
+        <div class="wt-slider">
+            <div class="wt-slider-img" style="background-image: url('{{ image_certificate_slider_1.path }}')" alt="Certificatr"></div>
+            <div class="wt-slider-img" style="background-image: url('{{ image_certificate_slider_2.path }}')" alt="Certificatr"></div>
+        </div>
+    </div>
+</section>
+
+{{ include('@sections/additional-info.twig') }}
+
+{{ include('@sections/description.twig') }}
+
+{{ include('@static/footer-contact.twig') }}
+
+{{ include('@static/footer.twig') }}

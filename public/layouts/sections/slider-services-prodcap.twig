@@ -1,0 +1,43 @@
+<section class="wt-services-section">
+    <div class="wt-services-container">
+       <ul class="wt-services-tabs-buttons">
+           <li class="wt-service-tab wt-selected-tab " href="tab-1">
+               <div class="wt-tab-img" style="background-image: url('{{ image_tab_img_1.path }}');"></div>
+               <span class="wt-service-title">{{ tab_prodcap_service_name_1 }}</span>
+           </li>
+           <li class="wt-service-tab" href="tab-2">
+               <div class="wt-tab-img" style="background-image: url('{{ image_tab_img_2.path }}');"></div>
+               <span class="wt-service-title">{{ tab_prodcap_service_name_2 }}</span>
+           </li>          
+       </ul>    
+    </div>
+    <div class="wt-information-service-container">
+        <div class="wt-services-tab-content tab-1 wt-selected-tab">
+            <div class="wt-service-tab-title"><p class="tab-title1">{{ tab_prodcap_service_about }}</p><p class="tab-title2">{{ tab_prodcap_service_name_1 }}</p> </div>
+            <div class="wt-service-information-block" style="background-image: url('{{ image_tab_prodcap_content_img_1.path }}');">
+                <div class="wt-service-text-information">
+                    <span>{{ tab_prodcap_content_1_text_1 }}</span>
+                    <span>{{ tab_prodcap_content_1_text_2 }}</span>
+                    <ul>
+                        {{ tab_prodcap_content_1_ul_li|raw }}
+                    </ul>
+                    <span>{{ tab_prodcap_content_1_text_3 }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="wt-services-tab-content tab-2" >
+            <div class="wt-service-tab-title"><p class="tab-title1">{{ tab_prodcap_service_about }}</p><p class="tab-title2">{{ tab_prodcap_service_name_2 }}</p> </div>
+            <div class="wt-service-information-block" style="background-image: url('{{ image_tab_prodcap_content_img_2.path }}');">
+    
+                <div class="wt-service-text-information">
+                    <span>{{ tab_prodcap_content_2_text_1 }}</span>
+                    <span>{{ tab_prodcap_content_2_text_2 }}</span>
+                    <ul>
+                        {{ tab_prodcap_content_2_ul_li|raw }}
+                    </ul>
+                    <span>{{ tab_prodcap_content_2_text_3 }}</span>
+                </div> 
+            </div>  
+        </div>      
+    </div>
+</section>

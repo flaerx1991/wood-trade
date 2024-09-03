@@ -1,0 +1,30 @@
+<section class="consultation-form">
+
+    <div class="consultation-form-content">
+        <div class="button-background">
+            <button class="consultation-button" onclick="openCloseConsultForm();"> Заказать консультацию</button >
+        </div>
+        
+        <div class="wt-client-req">
+
+            <div class="wt-buy-form-wrap">
+
+                <div class="wt-close-button" onclick="openCloseConsultForm();"></div>
+    
+                <form class="wt-buy-form" onsubmit="event.preventDefault();">
+                    <input class="wt-input input-name" type="text" placeholder="name" value="">
+                    <input class="wt-input input-tel" id="buyFormTelInput" type="tel" placeholder="phone number">
+                    <input class="wt-input input-email" type="email" placeholder="email">
+                    <div class="wt-message"></div>
+                    <button class="wt-button" onsubmit="event.preventDefault();" onclick="buyFormSubmit();">Отправить</button>
+                </form>
+    
+            </div>
+    
+
+
+        </div>
+       
+    </div>
+
+</section>

@@ -1,0 +1,25 @@
+{{ include('@static/header.twig') }}
+
+{{ include('@sections/breadcrumbs.twig') }}
+
+{{ include('@sections/buy-form.twig') }}
+
+<div class="wt-container">
+    <main>
+        <div class="wt-side-menu-grid">
+
+            {{ include('@sections/mobile-filters.twig') }}
+
+            {{ include('@static/side-menu.twig') }}
+
+            {{ include('@sections/card-item.twig') }}
+            
+            {{ include('@sections/product-catalog.twig') }}
+
+        </div>
+    </main>
+</div>
+
+{{ include('@static/footer-contact.twig') }}
+
+{{ include('@static/footer.twig') }}

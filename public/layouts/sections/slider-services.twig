@@ -1,0 +1,116 @@
+<section class="wt-services-section">
+    <div class="wt-services-container">
+       <ul class="wt-services-tabs-buttons">
+           <li class="wt-service-tab wt-selected-tab " href="tab-1">
+               <div class="wt-tab-img">
+                    <picture>
+                        <source srcset="{{ image_tab_img_1_webp.path }}" type='image/webp'>
+                        <source srcset="{{ image_tab_img_1.path }}" type='image/png'>
+                        <img src="{{ image_tab_img_1_webp.path }}" class="img-fluid" alt="{{ image_tab_img_1.alt }}" loading="lazy">
+                    </picture>
+               </div>
+               <span class="wt-service-title">{{ tab_service_name_1 }}</span>
+           </li>
+           <li class="wt-service-tab" href="tab-2">
+               <div class="wt-tab-img">
+                    <picture>
+                        <source srcset="{{ image_tab_img_2_webp.path }}" type='image/webp'>
+                        <source srcset="{{ image_tab_img_2.path }}" type='image/png'>
+                        <img src="{{ image_tab_img_2_webp.path }}" class="img-fluid" alt="{{ image_tab_img_2.alt }}" loading="lazy">
+                    </picture>
+               </div>
+               <span class="wt-service-title">{{ tab_service_name_2 }}</span>
+           </li>
+           <li class="wt-service-tab " href="tab-3">
+               <div class="wt-tab-img">
+                    <picture>
+                        <source srcset="{{ image_tab_img_3_webp.path }}" type='image/webp'>
+                        <source srcset="{{ image_tab_img_3.path }}" type='image/png'>
+                        <img src="{{ image_tab_img_3_webp.path }}" class="img-fluid" alt="{{ image_tab_img_3.alt }}" loading="lazy">
+                    </picture>
+               </div>
+               <span class="wt-service-title">{{ tab_service_name_3 }}</span>
+           </li>
+       </ul>
+    </div>
+    <div class="wt-information-service-container">
+        <div class="wt-services-tab-content tab-1 wt-selected-tab">   
+            <div class="wt-service-tab-title"><p class="tab-title1">{{ tab_service_about }}</p><p class="tab-title2">{{ tab_service_name_1 }}</p> </div>
+            <div class="wt-service-information-block">
+                <picture>
+                    <source srcset="{{ image_tab_content_img_1_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_1.path }}" type='image/png'>
+
+                    <source srcset="{{ image_tab_content_img_1_tablet_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_1_tablet.path }}" type='image/png'>
+
+                    <source srcset="{{ image_tab_content_img_1_mobile_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_1_mobile.path }}" type='image/png'>
+                    
+                    <img src="{{ image_tab_content_img_1_mobile_webp.path }}" class="img-fluid" alt="{{ image_tab_img_3.alt }}" loading="lazy">
+                </picture>
+
+                <div class="wt-service-text-information">
+                    <span>{{ tab_content_1_text_1 }}</span>
+                    <span>{{ tab_content_1_text_2 }}</span>
+                    <ul>
+                        {{ tab_content_1_ul_li|raw }}
+                    </ul>
+                    <span>{{ tab_content_1_text_3 }}</span>            
+                </div>  
+            </div>  
+        </div>
+        <div class="wt-services-tab-content tab-2" >
+            <div class="wt-service-tab-title"><p class="tab-title1">{{ tab_service_about }}</p><p class="tab-title2">{{ tab_service_name_2 }}</p></div>
+            <div class="wt-service-information-block">
+                <picture>
+                    <source srcset="{{ image_tab_content_img_2_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_2.path }}" type='image/png'>
+
+                    <source srcset="{{ image_tab_content_img_2_tablet_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_2_tablet.path }}" type='image/png'>
+
+                    <source srcset="{{ image_tab_content_img_2_mobile_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_2_mobile.path }}" type='image/png'>
+
+                    <img src="{{ image_tab_content_img_2_mobile_webp.path }}" class="img-fluid" alt="{{ image_tab_img_3.alt }}" loading="lazy">
+                </picture>
+
+                <div class="wt-service-text-information">                  
+                    <span>{{ tab_content_2_text_1 }}</span>
+                    <span>{{ tab_content_2_text_2 }}</span>
+                    <ul>
+                        {{ tab_content_2_ul_li|raw }}
+                    </ul>
+                    <span>{{ tab_content_2_text_3 }}</span>            
+                </div>
+            </div>  
+        </div>
+        <div class="wt-services-tab-content tab-3">
+            <div class="wt-service-tab-title"><p class="tab-title1">{{ tab_service_about }}</p><p class="tab-title2">{{ tab_service_name_3 }}</p> </div>  
+            <div class="wt-service-information-block">
+                <picture>
+                    <source srcset="{{ image_tab_content_img_3_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_3.path }}" type='image/png'>
+
+                    <source srcset="{{ image_tab_content_img_3_tablet_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_3_tablet.path }}" type='image/png'>
+
+                    <source srcset="{{ image_tab_content_img_3_mobile_webp.path }}" type='image/webp'>
+                    <source srcset="{{ image_tab_content_img_3_mobile.path }}" type='image/png'>
+                    
+                    <img src="{{ image_tab_content_img_3_mobile_webp.path }}" class="img-fluid" alt="{{ image_tab_img_3.alt }}" loading="lazy">
+                </picture>
+
+                <div class="wt-service-text-information">                   
+                    <span>{{ tab_content_3_text_1 }}</span>
+                    <span>{{ tab_content_3_text_2 }}</span>
+                    <ul>
+                        {{ tab_content_3_ul_li|raw }}
+                    </ul>
+                    <span>{{ tab_content_3_text_3 }}</span>
+                </div>   
+            </div>
+        </div>
+    </div>
+</section>

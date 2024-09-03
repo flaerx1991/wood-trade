@@ -1,0 +1,42 @@
+<section class="wt-about-ltd">
+    <div class="wt-grid">
+        <div class="wt-title">
+            <p class="wt-border-text">{{ wood_working_title }}</p>
+            <h2 class="wt-text">{{ wood_working_WTLtd_text|raw }}{{ wood_working_WTLtd }}</h2>
+        </div>
+        <div class="wt-info">
+            <h3>{{ wood_working_company_name }}</h3>
+            <p>{{ wood_working_main_text_1 }}</p>
+            <p>{{ wood_working_main_text_2 }}</p>
+        </div>
+        <div class="wt-counters-col">
+            <div class="wt-years">
+                <span>20 +</span>
+                <h3>{{ wood_working_years }}</h3>
+            </div>
+            <div class="wt-location">
+                <span>6</span>
+                <h3>{{ wood_working_locations }}</h3>
+            </div>
+            <div class="wt-process">
+                <span>320,000 +</span>
+                <h3>{{ wood_working_process }}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="wt-picture-wrap">
+        <picture class="wt-picture">
+            <source srcset="{{ image_main_accordion_webp.path }}" type='image/webp'>
+            <source srcset="{{ image_main_accordion.path }}" type='image/png'>
+
+            <source srcset="{{ image_main_accordion_tablet_webp.path }}" type='image/webp'>
+            <source srcset="{{ image_main_accordion_tablet.path }}" type='image/png'>
+
+            <source srcset="{{ image_main_accordion_mobile_webp.path }}" type='image/webp'>
+            <source srcset="{{ image_main_accordion_mobile.path }}" type='image/png'>
+
+            <img src="{{ image_main_accordion_mobile_webp.path }}" class="img-fluid" alt="{{ image_main_accordion_mobile.alt }}" loading="lazy">
+        </picture>
+    </div>
+    <div class="wt-background"></div>
+</section>

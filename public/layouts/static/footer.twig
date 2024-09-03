@@ -1,0 +1,59 @@
+<footer>
+    <div class="wt-container">
+        <div class="wt-footer-grid">
+            <div class="wt-item wt-menu">
+                <ul class="wt-inner-ul">
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog">{{ footer_products }}</a></li>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}services">{{ footer_services }}</a></li>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}about">{{ footer_company}}</a></li>
+                </ul>
+            </div>
+            <div class="wt-item wt-contacts">
+                <p>
+                    <a href="#" title="facebook">
+                        <img src="/libs/img/facebook-f-white.svg" alt="facebook" loading="lazy">
+                    </a>
+                    <a href="#" title="linkedin">
+                        <img src="/libs/img/linkedin-white.svg" alt="linkedin" loading="lazy">
+                    </a>
+                    <a href="#" title="instagram">
+                        <img src="/libs/img/instagram-white.svg" alt="instagram" loading="lazy">
+                    </a>
+                </p>
+                <ul class="wt-inner-ul">
+                    <li><a href="tel:{{ footer_number_link }}" class="wt-phone">{{ footer_number }}</a></li>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}contact" class="wt-contact-us">{{ footer_contact_us}}</a></li>
+                </ul>
+            </div>
+            <div class="wt-item wt-adress">
+                <p>{{ footer_adress }}</p>
+            </div>
+            <div class="wt-item wt-social-net">
+                <a href="#" title="facebook">
+                    <img src="/libs/img/facebook-f-white.svg" alt="facebook" loading="lazy">
+                </a>
+                <a href="#" title="linkedin">
+                    <img src="/libs/img/linkedin-white.svg" alt="linkedin" loading="lazy">
+                </a>
+                <a href="#" title="instagram">
+                    <img src="/libs/img/instagram-white.svg" alt="instagram" loading="lazy">
+                </a>
+                <p class="wt-share-button" onclick="shareButton(this);" data-href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}{{ path }}{% if not (product_slug is empty) %}{{ '/' ~ p_slug[baselocale] }}{% endif %}{% if c_slug|length > 0 %}{{ '/' ~ c_slug[session.language] }}{% endif %}">
+                    <img src="/libs/img/share-button-white.svg" alt="share" loading="lazy">
+                </p>
+            </div>
+            <div class="wt-item wt-info">
+                <p>{{ footer_report }}</p>
+                <p>{{ footer_privacy_policy }}</p>
+            </div>
+            <div class="wt-item wt-copyright">
+                <p>{{ footer_copyrights | raw}}</p>
+            </div>
+        </div>
+    </div>
+    {{ include('@js/footer_loaded.twig') }}
+  </footer>
+</body>
+
+
+</html>

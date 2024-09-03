@@ -1,0 +1,47 @@
+<section class="wt-side-menu">
+    <div class="wt-menu">
+        <div class="wt-title">{{ side_menu_menu_title }}</div>
+        <ul class="wt-filters" id="accordion">
+            <!--noindex-->
+            <li class="wt-item-menu"><span><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}" rel="nofollow">{{ side_menu_main_page_title }}</a></span></li>
+            <!--noindex-->
+            <li class="wt-item-menu opened"><span>{{ side_menu_products_title }}</span>
+                <ul>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog">{{ side_menu_all_products }}</a></li>
+                    {% for category in categories %}
+                        <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog{{ '/' ~ category.slug }}">{{ category.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li class="wt-item-menu"><span>{{ side_menu_services_title }}</span>
+                <ul>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}sawing-wood">{{ service_header_1 }}</a></li>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}wood-drying">{{ service_header_2 }}</a></li>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}grinding-and-calibration">{{ service_header_3 }}</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="wt-contacts">
+        <div class="wt-title">{{ side_menu_contacts }}</div>
+        <ul class="wt-list-contacts">
+            <li class="wt-item-contact">{{ side_menu_adress_title }}
+                <p>{{ side_menu_adress }}</p>
+                <a href="{{ side_menu_show_on_map_link }}">{{ side_menu_show_on_map }}</a>
+            </li>
+            <li class="wt-item-contact">{{ side_menu_directors }}
+                <p>{{ side_menu_company_director|raw }}</p>
+                <p>{{ side_menu_craft_director|raw }}</p>
+            </li>
+            <li class="wt-item-contact">{{ side_menu_our_phones }}
+                <p>{{ side_menu_directors_phone }}</p>
+                <p class="wt-tel"><a href="tel:{{ side_menu_our_number_link }}">{{ side_menu_our_number }}</a></p>
+                <p class="wt-side-menu-description">{{ side_menu_description }}</p>
+            </li>
+            <li class="wt-item-contact">{{ side_menu_internet_title }}
+                <p class="wt-adress">{{ side_menu_email_title }} <a href="mailto:{{ side_menu_email }}">{{ side_menu_email }}</a></p>
+                <p class="wt-adress">{{ side_menu_site_title }} <a href="{{ side_menu_site }}">{{ side_menu_site_name }}</a></p>
+            </li>
+        </ul>
+    </div>
+</section>

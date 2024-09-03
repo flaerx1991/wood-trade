@@ -1,0 +1,15 @@
+<section class="wt-buy-form-section">
+    <div class="wt-buy-form-wrap">
+        <div class="wt-close-button" onclick="openCloseBuyForm();"></div>
+        <form class="wt-buy-form" onsubmit="event.preventDefault();">
+            <input class="wt-input input-name" type="text" placeholder="{{ buy_form_name_placeholder }}" value="">
+            <input class="wt-input input-tel" id="buyFormTelInput" type="tel" placeholder="{{ buy_form_phone_placeholder }}">
+            <input class="wt-input input-email" type="email" placeholder="{{ buy_form_email_placeholder }}">
+            <textarea class="wt-input input-message" name="message" id="" cols="30" rows="30" placeholder="{{ buy_form_message_placeholder }}"></textarea>
+            <input class="wt-input-file" type="file" name="" id="input_client_file">
+            <label class="wt-input-file-label" for="input_client_file" data-text="{{ buy_form_input_client_file_text }}">{{ buy_form_input_client_file_text }}</label>
+            <div class="wt-message"></div>
+            <button class="wt-button" onsubmit="event.preventDefault();" onclick="buyFormSubmit();">{{ buy_form_buy_button }}</button>
+        </form>
+    </div>
+</section>

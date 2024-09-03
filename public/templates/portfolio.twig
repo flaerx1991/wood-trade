@@ -1,0 +1,55 @@
+{{ include('@layouts/headerall.twig') }}
+
+{{ include('@js/main_js.twig') }}
+ <div id="particles-js" class="portjs"></div>
+				{{ include('@particles/portfolio.twig') }}
+ <div class="inner-banner-content">
+						<p class="inner-banner-title">
+							Portfolio                   </p>
+													<ul class="breadcumbs list-inline"><li><a href="http://custom.nocturnal.com.ua">Home</a> / Portfolio</li></ul>											</p>				
+				
+ 
+
+
+   <div class="divider-xl"></div>
+         <div class="widget-wrap">
+             <p>PORTFOLIO</p>
+         </div> 
+           <div class="heading-contact">    
+                <h1>
+                    {{page_h1 | raw}}
+                </h1>
+            </div>
+       <div class="container">
+             <div class="row divider mob">
+                 <div class="col-sm-6 col-md-6 col-lg-6 col-6" data-aos="zoom-in"><div class="gallery-item" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><img src="/libs/img/daricoport.jpg" alt=""><div class="after"><div class="gallery-content">
+                 <a href="http://wood-trade.com.ua/{{ session.language == baselocale ? '' :  session.language~'/' }}portfolio/darico">DARICO</a></div>
+                 </div>
+                 </div>
+                 </div>
+                 <div class="col-sm-6 col-md-6 col-lg-6 col-6" data-aos="zoom-in"><div class="gallery-item"><img src="/libs/img/btuaport.jpg" alt=""><div class="after"><div class="gallery-content">
+                 <a href="http://wood-trade.com.ua/{{ session.language == baselocale ? '' :  session.language~'/' }}portfolio/mccard">MYCITYCARD</a></div>
+                 </div></div></div>
+             </div>
+                <div class="row divider mob">
+                 <div class="col-sm-6 col-md-6 col-lg-6 col-6" data-aos="zoom-in"><div class="gallery-item"><img src="/libs/img/mercanaport.jpg" alt=""><div class="after"><div class="gallery-content">
+                 <a href="http://wood-trade.com.ua/{{ session.language == baselocale ? '' :  session.language~'/' }}portfolio/mercana">MERCANA</a></div>
+                 </div></div></div>
+                 <div class="col-sm-6 col-md-6 col-lg-6 col-6" data-aos="zoom-in"><div class="gallery-item"><img src="/libs/img/ttswtrsport2.jpg" alt=""><div class="after"><div class="gallery-content">
+                 <a href="http://wood-trade.com.ua/{{ session.language == baselocale ? '' :  session.language~'/' }}portfolio/ttswtrs">TTSWTRS</a></div>
+                 </div></div></div>
+             </div>
+                <div class="row divider mob">
+                 <div class="col-sm-6 col-md-6 col-lg-6 col-6" data-aos="zoom-in"><div class="gallery-item" ><img src="/libs/img/alphasteel1.jpg" alt=""><div class="after"><div class="gallery-content">
+                 <a href="http://wood-trade.com.ua/{{ session.language == baselocale ? '' :  session.language~'/' }}portfolio/alphasteel">ALPHASTEEL</a></div>
+                 </div></div></div>
+                 <div class="col-sm-6 col-md-6 col-lg-6 col-6" data-aos="zoom-in"><div class="gallery-item"><img src="/libs/img/sales-up.png" alt=""><div class="after"><div class="gallery-content">
+                 <a href="http://wood-trade.com.ua/{{ session.language == baselocale ? '' :  session.language~'/' }}portfolio/salesup">SALES UP</a></div>
+                 </div></div></div>
+                
+             </div>
+         </div> 
+<div class="divider-xl"></div>
+<div class="divider-xl"></div>
+
+{{ include('@layouts/footer.twig') }}

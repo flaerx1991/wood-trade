@@ -1,0 +1,35 @@
+.wt-page-industries{
+
+    .wt-description, .wt-description-rtl{
+        display: block;
+    }
+
+    .wt-description-two-pictures{
+
+        .company{
+            .left-info{
+
+                .wt-image-container{
+
+                    .wt-image-container-img{
+                        display: block;
+                    }
+                }
+            }
+
+            .right-info{
+                display: grid;
+
+                img{
+                    display: block;
+                    
+                    margin-top: 10px;
+
+                    @media (min-width:$screen-sm-min){
+                        grid-row: 3;
+                    }
+                }
+            }
+        }
+    }
+}

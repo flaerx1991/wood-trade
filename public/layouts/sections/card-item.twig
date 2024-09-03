@@ -1,0 +1,48 @@
+<section class="wt-card-item">
+    <div class="wt-item-slider-wrap">
+        <div class="wt-filters filters-mobile-open">{{ card_items_filters }}</div>
+        <p class="wt-title">{{ item_name }}</p>
+        <div class="wt-wrap">
+            <div class="wt-item-slider">
+                {% for image in images %}
+                    <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy">
+                {% endfor %}
+            </div>
+            <div class="wt-slider-dots">
+                {% for image in images %}
+                    <img src="{{ image.path }}" alt="{{ image.alt }}" loading="lazy">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="wt-order-item">
+        <p class="wt-title">{{ item_name }}</p>
+        <p class="wt-order-type">{{ card_items_order_type }}</p>
+        <p class="wt-price">{{ card_items_price }} <span>{{ item_price }} {{ card_items_valute }}</span></p>
+        <p class="wt-country">{{ card_items_country }} <span>{{ card_items_country_name }}</span></p>
+        <div class="wt-buy" onclick="openCloseBuyForm();">{{ card_items_buy }}</div>
+        <div class="wt-payment">
+            <p class="wt-title">{{ card_items_payment }}</p>
+            <p>{{ card_items_payments_types|raw }}</p>
+            <a href="">{{ card_items_in_detal }}</a>
+        </div>
+        <div class="wt-delivery">
+            <p class="wt-title">{{ card_items_delivery }}</p>
+            <p>{{ card_items_delivery_types }}</p>
+            <a href="">{{ card_items_in_detal }}</a>
+        </div>
+    </div>
+    <div class="wt-item-description">
+        <ul class="wt-select-tab">
+            <li class="wt-tab-button wt-selected" href="content-1">{{ card_items_tab_descroption }}</li>
+            <li class="wt-tab-button" href="content-2">{{ card_items_properties }}</li>
+            <li class="wt-tab-button" href="content-3">{{ card_items_more_info }}</li>
+        </ul>
+        <div class="tab-content content-1 wt-selected">
+            {{ item_description }}
+        </div>
+        <div class="tab-content content-2">{{ item_properties }}</div>
+        <div class="tab-content content-3">{{ item_more_info }}</div>
+    </div>
+    
+</section>

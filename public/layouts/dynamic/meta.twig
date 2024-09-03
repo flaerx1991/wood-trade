@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    {% if meta_title|length > 0 %}
+        {{ meta_title }}
+    {% else %}
+        woodtrade
+    {% endif %}
+</title>
+
+{% if  meta_robots   %}
+<meta name="robots" content="{{ meta_robots }}">
+{% endif %}
+
+{% if meta_googlebot  %}
+<meta name="googlebot" content="{{ meta_googlebot }}">
+{% endif %}
+
+<meta name="description" content="{% if meta_title|length > 0 %}{{ meta_description }}{% else %}woodtrade{% endif %}" />
+<meta name="Keywords" content="{{ meta_keywords }}">
+
+<link rel="shortcut icon" href="/libs/img/favicon.png" type="image/png">
+<meta property="og:locale" content="{{ session.language }}">
+{# <meta property="og:url" content="{{ meta_og_url }}"> #}
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ meta_og_image_src }}">
+
+<meta property="og:title" content="{% if meta_og_title|length > 0 %}{{ meta_og_title }}{% else %}woodtrade{% endif %}">
+<meta property="og:description" content="{{ meta_og_description }}">
+<meta name="google-site-verification" content="uu3vqDEVtdCrZ53CsOSvgm5Te8S2So8Gx88u6jd-p3M" /> <!-- новий тег -->
+<meta property="og:site_name" content="dev.wood-trade.com.ua">
+
+
+<link rel="canonical" href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}{{ path }}{% if not (product_slug is empty) %}{{ '/' ~ p_slug[baselocale] }}{% endif %}{% if c_slug|length > 0 %}{{ '/' ~ c_slug[session.language] }}{% endif %}" />
+<meta property="og:url" content="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}{{ path }}{% if not (product_slug is empty) %}{{ '/' ~ p_slug[baselocale] }}{% endif %}{% if c_slug|length > 0 %}{{ '/' ~ c_slug[session.language] }}{% endif %}" />
+
+{# <link rel="canonical" href="{{ home_url }}" /> #}

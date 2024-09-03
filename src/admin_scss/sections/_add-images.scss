@@ -1,0 +1,24 @@
+.images-message-block{
+    .message{
+        display: none;
+        // height: 45px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+
+        line-height: 41px;
+        text-align: left;
+        padding: 0 0 0 30px;
+        box-sizing: border-box;
+    }
+
+    .good{
+        background-color: #7acd72b1;
+        border: 2px solid #7acd72;
+        
+    }
+
+    .bad{
+        background-color: #cd7272b1;
+        border: 2px solid #cd7272;
+    }
+}

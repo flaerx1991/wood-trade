@@ -1,0 +1,67 @@
+<section class="wt-product-catalog">
+    <div class="wt-main-grid">
+        <div class="wt-filters filters-mobile-open">
+            {# id="filters_mobile_open" #}
+            {{ product_catalog_filters }}
+        </div>
+
+        {% if not (category_name is empty) %}
+
+            <p class="wt-title">
+                {{category_name}}
+            </p>
+            
+            <div class="wt-products">
+                {% for product in products %}
+                    {% set image = product.images|split(' ') %}
+                <div class="wt-item">
+                    <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}product/{{ product.slug }}" class="wt-link-wrap">
+                        <span class="wt-background"></span>
+                        <span class="wt-image"><img src="{{ images_meta[product.p_key]['path'] }}" alt="{{ images_meta[product.p_key]['alt'] }}" loading="lazy"></span>
+                        <h3 class="wt-item-name">{{product.name}}</h3>
+                        <b class="wt-order">{{ product_catalog_order }}</b>
+                        <b class="wt-order-type">{{ product_catalog_order_type }}</b>
+                        <span class="wt-price">{{ product_catalog_price }} <b>{{ product.price }}</b></span>
+                    </a>
+                    <div class="wt-line"></div>
+                    <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}product/{{ product.slug }}" class="wt-button">{{ product_catalog_more_info }}</a>
+                </div>
+                {% endfor %}
+    
+                {% for category in categories %}
+    
+                {% endfor %}
+            </div>
+            {% else %}
+    
+            {% for category in categories %}
+                <p class="wt-title"> {{ category.name }} </p>
+                <div class="wt-products">
+                {% for product in products %}
+                    
+                    {% if product.category == category.c_key %}
+                        <div class="wt-item">
+                            <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}product/{{ product.slug }}" class="wt-link-wrap">
+                                <span class="wt-background"></span>
+                                <span class="wt-image"><img src="{{ images_meta[product.p_key]['path'] }}" alt="{{ images_meta[product.p_key]['alt'] }}" loading="lazy"></span>
+                                    <h3 class="wt-item-name">{{product.name}}</h3>
+                                    <b class="wt-order">{{ product_catalog_order }}</b>
+                                    <b class="wt-order-type">{{ product_catalog_order_type }}</b>
+                                <span class="wt-price">{{ product_catalog_price }} <b>{{ product.price }}</b></span>
+                            </a>
+                            <div class="wt-line"></div>
+                            <a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}product/{{ product.slug }}" class="wt-button">{{ product_catalog_more_info }}</a>
+                        </div>
+                    {% endif %}
+                    
+                {% endfor %}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <div class="wt-catalog-seo-text">
+            <p class="wt-title">{{ seo_text_title }}</p>
+            <p class="wt-text">{{ seo_text }} </p>
+        </div>
+    </div>
+</section>

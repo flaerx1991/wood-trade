@@ -1,0 +1,25 @@
+<section class="wt-out-services">
+    <div class="wt-green-block-services"></div>
+    <div class="wt-picture-block-services">
+        <picture>
+            <source srcset="{{ image_our_service_webp.path }}" type='image/webp'>
+            <source  srcset="{{ image_our_service.path }}" type='image/png'>
+
+            <source srcset="{{ image_our_service_tablet_webp.path }}" type='image/webp'>
+            <source  srcset="{{ image_our_service_tablet.path }}" type='image/png'>
+
+            <img src="{{ image_our_service_tablet_webp.path }}" class="img-fluid" alt="{{ image_our_service.alt }}" loading="lazy">
+        </picture>
+    </div>
+    <div class="wt-container">
+        <div class="wt-medium-block-text">
+            <p><span class="wt-text-1">{{ our_service_title_1 }}</span><br><span class="wt-text-2">{{ our_service_title_2 }}</span></p>
+        </div>
+        <div class="wt-low-block-text">
+            <div class="wt-block-text">
+                <h6>{{ our_service_product_title }}</h6>
+                <p>{{ our_service_text|raw }}</p>
+            </div>
+        </div>
+    </div>
+</section>

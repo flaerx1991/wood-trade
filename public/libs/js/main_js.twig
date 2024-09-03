@@ -1,0 +1,25 @@
+<script>
+function clickglow(e){let t=e;console.log(t),document.getElementById(t).classList.add("glow")}function validate(e,t){var n=document.forms[e].elements[t].value;if(0==/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(n))return alert("{{placeholder_newsletter_ivnvalid}}"),!1}var current_form;function clickme(){document.getElementById(current_form).focus(),console.log("i see click",current_form)}function hide(){console.log("hide ",current_form),document.getElementById("popup").style.display="none",setTimeout(clickme,200)}function show(e){current_form=e,console.log("curent",current_form),document.getElementById("popup").style.display="block"}function add(){var e=document.getElementById("name").value,t=document.getElementById("phone").value,n=document.getElementById("email").value;if(""==e||""==t||""==n)alert("Please fill all fields.");else{document.getElementById("popup").style.display="none";var o=document.createElement("div");o.className+="cont",o.innerHTML="Name: "+e+"<br>Age: "+t+"<br>Country: "+n,document.getElementById("results").appendChild(o),document.getElementById("name").value="",document.getElementById("phone").value="",document.getElementById("email").value=""}}window.history.replaceState&&window.history.replaceState(null,null,window.location.href),document.getElementById("phone").addEventListener("input",function(e){var t=e.target.value.replace(/\D/g,"").match(/(\d{0,3})(\d{0,3})(\d{0,4})/);e.target.value=t[2]?"("+t[1]+") "+t[2]+(t[3]?"-"+t[3]:""):t[1]});var today=new Date,dd=String(today.getDate()).padStart(2,"0"),mm=String(today.getMonth()+1).padStart(2,"0"),yyyy=today.getFullYear();today=yyyy+"-"+mm+"-"+dd;var checkbox=document.querySelector("input[name=checkbox]");checkbox.addEventListener("change",function(){let e=document.getElementById("details-container");this.checked?(console.log("Checkbox is checked.."),e.style.display="block",document.getElementById("00N090000011j5j").value=today,document.getElementById("00N090000011j5j").setAttribute("min",today)):(console.log("Checkbox is not checked.."),e.style.display="none")});
+ </script>
+
+  <script>
+         $("button").click(function() {
+           
+            var fired_button = $(this).val();
+            $("#00N090000011j3Y").val(fired_button);
+        });
+      
+       
+          jQuery(document).on('keyup',function(evt) {
+          if (evt.keyCode == 27) {
+           document.getElementById("popup").style.display = "none";
+          }
+        });
+          
+       
+        $("#stext").hover(function(){
+          $(this).css("overflow-y", "scroll");
+       });
+          
+    
+      </script>

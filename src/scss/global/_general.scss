@@ -1,0 +1,59 @@
+/*general css style */
+*{
+  // outline: 1px solid red!important;
+}
+html {
+  font-size: 100%; /* This means 16px */
+  overflow-x: hidden;
+}
+body {
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  color: $text1;
+  font-family: 'PFD';
+  line-height: unset;
+  overflow-x: hidden;
+  //direction: rtl;
+}
+
+.clear {
+  clear: both;
+}
+.wt-container{
+  // background-color: rgb(193, 255, 224);
+  box-sizing: border-box;
+  padding: 0 10px 0 10px;
+  // overflow: hidden;
+  @media (min-width: $screen-xl-min) {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  @media (min-width: $screen-contain-min) {
+    padding: 0 0 0 0;
+    overflow: unset;
+  }
+}
+
+.wt-breadcrumbs{
+  height: 60px;
+}
+
+/*---------------------------------------
+   Typography
+-----------------------------------------*/
+
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+p{
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}

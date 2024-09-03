@@ -1,0 +1,39 @@
+<section class="wt-map">
+    <div class="wt-map-container">
+        <div class="wt-text-col">
+                <div class="wt-ifo-wrap">
+                    <div class="wt-green-cont"></div>
+                    <div class="wt-text-map-heading">
+                        <p class="wt-border-title">{{ map_contact_nashi_contacti }}</p>
+                        <h1 class="wt-title">{{ map_contact_contact_page_title }}</h1>
+                    </div>
+                    <div class="wt-white-contact">
+                        <div class="wt-phone">
+                            <p class="wt-title">{{ map_contact_phone_title }}</p>
+                            <a href="tel:{{ map_contact_tel_number_link }}">{{ map_contact_tel_number }}</a>
+                        </div>
+                        <div class="wt-email">
+                            <p class="wt-title">{{ map_contact_email_title }}</p>
+                            <a href="mailto:{{ map_contact_email }}">{{ map_contact_email }}</a>
+                        </div>
+                        <div class="wt-site">
+                            <p class="wt-title">{{ map_contact_web_site_title }}</p>
+                            <!--noindex-->
+                            <a rel="nofollow" href="https://{{ map_contact_web_site }}">{{ map_contact_web_site }}</a>
+                            <!--/noindex-->
+                        </div>
+                        <div class="wt-adress">
+                            <p class="wt-title">{{ map_contact_adress_title }}</p>
+                            <p>{{ map_contact_adress_place }}</p>
+                            <a href="{{ map_contact_show_on_map_link }}">{{ map_contact_show_on_map }}</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="wt-map-col">
+            <div class="wt-map-container">
+                <div class="wt-map-google" id="map"></div>
+            </div>
+        </div>
+    </div>
+</section>

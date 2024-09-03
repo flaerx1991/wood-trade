@@ -1,0 +1,248 @@
+.wt-map{
+    width: 100%;
+    display: block;
+    // text-align: center;
+    margin-bottom: 40px;
+    @media (min-width: $screen-xl-min) {
+        margin-bottom: 103px;
+    }
+    .wt-map-container{
+        // display: flex;
+        margin: 0 auto;
+        width: 100%;
+        @media (min-width: $screen-sm-min) {
+            display: flex;
+        }
+        .wt-text-col{
+            width: 100%;
+            @media (min-width: $screen-sm-min) {
+                width: 333px;
+                min-height: 692px;
+                position: relative;
+            }
+            @media (min-width: $screen-xl-min) {
+                width: 100%;
+            }
+            .wt-ifo-wrap{
+                position: relative;
+                padding: 40px 10px 20px 10px;
+                box-sizing: border-box;
+                background-color: transparent;
+                @media (min-width: $screen-sm-min) {
+                    width: 480px;
+                    // margin: 0 125px 0 auto;
+                    position: unset;
+                    padding: 40px 0px 30px 20px;
+                }
+                @media (min-width: $screen-xl-min) {
+                    margin: 0 125px 0 auto;
+                    padding: 70px 0 70px 10px;
+                }
+                .wt-green-cont{
+                    background-color: $green2;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                    @media (min-width: $screen-xl-min) {
+                        left: unset;
+                        right: 200px;
+                    }
+                }
+                .wt-text-map-heading{
+                    position: relative;
+                    z-index: 3;
+                    .wt-border-title{
+                        display: block;
+                        height: 35px;
+                        font-size: 35px;
+                        font-family: 'PFDC';
+                        font-weight: 700;
+                        color: transparent;
+                        line-height: 29px;
+                        -webkit-text-stroke-color: $white;
+                        -webkit-text-stroke-width: 1.00px;
+                        @media (min-width: $screen-sm-min) {
+                            height: 54px;
+                            font-size: 70px; 
+                            line-height: 70px;
+                        }
+                        @media (min-width: $screen-xl-min) {
+                            height: 74px;
+                            font-size: 100px; 
+                            line-height: 100px;
+                        }
+                    }
+                    .wt-title{
+                        position: relative;
+                        font-size: 35px;
+                        font-family: 'PFDC';
+                        font-weight: 700;
+                        color: $white;
+                        line-height: 30px;
+                        top: 10px;
+                        left: 2px;
+                        margin: 0 0 20px 0;
+                        @media (min-width: $screen-sm-min) {
+                            font-size: 60px;
+                            line-height: 0px;
+                            margin: 0 0 55px 0;
+                        }
+                        @media (min-width: $screen-xl-min) {
+                            font-size: 80px;
+                            line-height: 0px;
+                            margin: 0 0 55px 0;
+                        }
+                    }
+                }
+                .wt-white-contact{
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 20px 10px;
+                    background-color: $white;
+                    border-radius: 7px;
+                    position: relative;
+                    z-index: 3;
+
+                    @media (min-width: $screen-sm-min) {
+                        width: 420px;
+                    }
+
+                    @media (min-width: $screen-sm-min) {
+                        width: 480px;
+                    }
+                    
+                    p{
+                        margin: 0;
+                        line-height: 40px;
+                    }
+
+                    .wt-phone{
+
+                        padding: 0 0 0 10px;
+                        box-sizing: border-box;
+
+                        @media (min-width: $screen-sm-min) {
+                            padding: 0 0 0 20px;
+                        }
+
+                        a{
+                            font-size: 20px;
+                            font-family: 'PFDC';
+                            font-weight: 700;
+                            color: #373737;
+                            line-height: 40px;
+                            text-decoration: none;
+                            
+                        }
+
+                        .wt-title{
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .wt-email{
+                        padding: 0 0 0 10px;
+                        box-sizing: border-box;
+                        
+                        @media (min-width: $screen-sm-min) {
+                            padding: 0 0 0 20px;
+                        }
+
+                        .wt-title{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $text1;
+                            line-height: 40px;
+                        }
+
+                        a{
+                            color: $green2;
+                            text-decoration: none;
+                            line-height: 40px;
+                        }
+                    }
+
+                    .wt-site{
+                        padding: 0 0 0 10px;
+                        box-sizing: border-box;
+
+                        @media (min-width: $screen-sm-min) {
+                            padding: 0 0 0 20px;
+                        }
+
+                        .wt-title{
+                            font-size: 20px;
+                            font-weight: 500;
+                            color: $text1;
+                        }
+
+                        a{
+                            color: $green2;
+                            text-decoration: none;
+                            line-height: 40px;
+                        }
+                    }
+                    .wt-adress{
+                        padding: 0 0 0 10px;
+                        box-sizing: border-box;
+                        @media (min-width: $screen-sm-min) {
+                            padding: 0 0 0 20px;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: 400;
+                            color: $text1;
+                        }
+                        .wt-title{
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                        a{
+                            color: $green2;
+                            font-size: 18px;
+                            font-weight: 500;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .wt-map-col{
+            width:100%;
+            // height: 350px;
+            z-index: 1;
+            @media (min-width: $screen-sm-min) {
+                height: 0;
+            }
+            .wt-map-container{
+                width: 100%;
+                display: block;
+                
+                @media (min-width: $screen-sm-min) {
+                    position: relative;
+                    top: -38px;
+                }
+                @media (min-width: $screen-xl-min) {
+                    top: -105px;
+                    width: calc(100% + 300px);
+                    left: -300px;
+                }
+                .wt-map-google{
+                    width: 100%;
+                    height: 350px;
+                    @media (min-width: $screen-sm-min) {
+                        height: 640px;
+                    }
+                    @media (min-width: $screen-xl-min) {
+                        height: 860px;
+                    }
+                }
+            }
+        }
+
+    }
+}

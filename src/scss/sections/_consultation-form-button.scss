@@ -1,0 +1,147 @@
+.consultation-form{
+
+    margin: 0 auto;
+    min-height: 200px;
+    width: 100%;
+    .consultation-form-content{
+        width: 100%;
+        margin: 0 auto;
+        background-color: $green1;
+        min-height: 200px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @media (min-width: $screen-sm-min) {  width: 80%;}
+        
+
+        .button-background{
+            width: 100%;
+            max-width: 300px;
+            height: 75px;
+            background: black;
+            border-radius: 5px;
+            .consultation-button{
+                cursor: pointer;
+
+                margin: 0 auto;
+                width: 100%;
+                max-width: 300px;
+                height: 75px;
+                border-radius: 5px;
+                font-size: 1.6em;
+                font-weight: 500;
+                
+                background: $green1;
+                
+                font-family: 'PFDC';
+                font-weight: 600;
+                color:$white ;
+                border: 4px solid white;
+    
+                &::before{
+    
+                }
+    
+               
+    
+            }
+        }
+        
+
+        .wt-client-req{
+
+            position: fixed;
+            display: none;
+            z-index: 88;
+            height: 100%;
+            top: 0;
+            background: #00000099;
+            
+            width: 100%;
+            .wt-buy-form-wrap{
+                position: relative;
+                top: 0;
+                z-index: 5;
+                top: 10em;
+                margin: 0 auto;
+                max-width: 500px;
+                width: 100%;
+                background-color: white;
+                border-radius: 15px;
+                box-sizing: border-box;
+                padding: 15px;
+                padding-top: 50px;
+                display: block;
+        
+                .wt-close-button{
+                    position: absolute;
+                    top: 10px;
+                    right: 15px;
+        
+                    height: 30px;
+                    width: 30px;
+        
+                    background-image: url('/libs/img/close-1.svg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+        
+                    cursor: pointer;
+                }
+        
+                .wt-buy-form{
+                    display: grid;
+        
+                    .wt-input{
+                        font-family: "PFD";
+                        font-size: 16px;
+        
+                        height: 45px;
+                        border-radius: 5px;
+                        background-color: #d2e6d1;
+                        margin-bottom: 10px;  
+                        border: 1px solid #d2e6d1;
+                        box-sizing: border-box;
+                        padding: 0 12px 0 12px;
+                        color: $text1;
+                    }
+        
+                    .wt-message{
+                        display: none;
+                        
+                        height: 45px;
+                        border-radius: 5px;
+                        background-color: #d2e6d1;
+                        margin-bottom: 10px;
+        
+                        font-weight: 500;
+                        font-size: 25px;
+                        line-height: 45px;
+                        font-family: "PFD";
+                        text-align: center;
+                    }
+        
+                    .wt-button{
+                        height: 45px;
+                        border-radius: 5px;
+                        font-size: 20px;
+                        color: $white;
+                        font-weight: 500;
+                        font-family: "PFD";
+                        text-align: center;
+                        background-color: $green2;
+                        margin: 0;         
+                        display: block;
+                        border: 1px solid $green2;
+        
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

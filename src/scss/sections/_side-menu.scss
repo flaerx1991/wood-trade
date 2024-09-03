@@ -1,0 +1,163 @@
+.wt-side-menu-grid{
+    margin: 20px 0;
+    display: block;
+    justify-content: space-between;
+    gap: 20px;
+    @media (min-width: $screen-xl-min) {
+        display: grid;
+        grid-template-columns: 280px minmax(0, 880px);
+    }
+    .wt-side-menu{
+        grid-column: 1;// test
+        grid-row: 1/3;// test
+        display: none;
+        @media (min-width: $screen-xl-min) {
+            display: block;
+        }
+        .wt-menu{
+            background-color: $whiteF4;
+            border-radius: 5px;
+            overflow: hidden;
+            box-sizing: border-box;
+            .wt-title{
+                display: block;
+                height: 45px;
+                background-color: $green2;
+                border-radius: 5px;
+                padding: 0 0 0 20px;
+
+                font-size: 24px;
+                font-weight: 500;
+                text-align: left;
+                line-height: 50px;
+                color: $white;
+            }
+            .wt-filters{
+                list-style: none;
+                padding: 0 20px 0 20px;
+                .wt-item-menu{
+                    line-height: 41px;
+                    font-size: 18px;
+                    font-family: 'PFD';
+                    font-weight: 300;
+                    cursor: pointer;
+                    span{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            top: -1px;
+                            left: -20px;
+                            width: 0;
+                            height: 100%;
+                            border-right: 2px solid $green2;
+                        }
+
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            color: unset;
+                            text-decoration: none;
+                        }
+                    }
+                    ul{
+                        display: none;
+                        list-style: none;
+                        padding: 0 0 0 20px;
+                        li{
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                text-decoration: none;
+                                color: $text1;
+                            }
+                        }
+                    }
+                }
+
+                .opened{
+                    ul{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .wt-show-more{
+            font-size: 18px;
+            font-weight: 500;
+            color: $green2;
+            line-height: 26px;
+            padding: 0 0 0 20px;
+        }
+    }
+    .wt-contacts{
+        margin: 20px 0 0 0;
+        background-color: $whiteF4;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 0 0 20px 0;
+        .wt-title{
+            display: block;
+            height: 45px;
+            background-color: $green2;
+            border-radius: 5px;
+            padding: 0 0 0 20px;
+
+            font-size: 24px;
+            font-weight: 500;
+            text-align: left;
+            line-height: 50px;
+            color: $white;
+            margin: 0 0 20px 0;
+        }
+        
+        .wt-list-contacts{
+            font-size: 18px;
+            font-family: 'PFDC';
+            font-weight: 700;
+            line-height: 26px;
+            list-style: none;
+            padding: 0 20px 0 20px;
+            li{
+                margin: 20px 0;
+            }
+
+            .wt-item-contact{
+                p{
+                    font-family: 'PFD';
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 26px;
+                    span{
+                        font-family: 'PFDC';
+                        font-weight: 700;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $green2;
+                    font-weight: 500;
+                }
+                .wt-tel{
+                    margin-top: 10px;
+                    span{
+                        color: $green2;
+                    }
+                }
+                .wt-side-menu-description{
+                    margin-top: 10px;
+                }
+                .wt-adress{
+                    position: relative;
+                    span{
+                        position: absolute;
+                        color: $green2;
+                        left: 55px;
+                    }
+                }
+            }
+        }
+    }
+}

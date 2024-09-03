@@ -1,0 +1,41 @@
+#AuthName "Authenication:"
+#AuthType Basic
+#AuthUserFile /var/www/woodtrade/wood-trade.com.ua/public/.htpasswd
+#Require valid-user
+
+# set dir index
+	DirectoryIndex index.php
+
+# enable apache rewrite engine
+	RewriteEngine on
+
+# set rewrite base
+	RewriteBase /
+	
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Push every request to index.php
+	#RewriteCond %{REQUEST_URI} !^/templates/([^/]+)$
+	#RewriteCond %{REQUEST_URI} !^/admin/([^/]+)$
+	#RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php [QSA]
+
+#http
+#	RewriteCond %{http} off
+#	RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI}
+
+#www to non-www
+	RewriteCond %{HTTP_HOST} www.wood-trade.com.ua
+	RewriteRule (.*) http://wood-trade.com.ua%{REQUEST_URI} [R=301,L]
+
+#canonical ip
+#	RewriteCond %{HTTP_HOST} ^91.207.61.21
+#	RewriteRule (.*) http://wood-trade.com.ua%{REQUEST_URI} [R=301,L]
+
+#base locale to / with hard redirect
+#  RewriteCond %{REQUEST_URI} !^/admin/([^/]+)$
+#		RewriteCond %{REQUEST_URI} ru
+#		RewriteRule index.php/(.*) http://wood-trade.com.ua/$1

@@ -1,0 +1,74 @@
+.drag-and-drop{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fill, 150px);
+    grid-auto-flow: auto;
+    justify-content: space-around;
+
+    width: 100%;
+    // max-width: 750px;
+    min-height: 200px;
+    border-radius: 5px;
+    border: 1px dashed rgb(130, 130, 130);
+    gap: 20px;
+    // box-sizing: border-box;
+    padding: 20px 0px;
+    z-index: 2;
+    transition: .3s;
+    &:hover{
+        background-color: rgba(58, 58, 58, 0.2);
+    }
+    &::after{
+        content: 'Перетащите изображение';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: calc(50% + -11px);
+        z-index: 1;
+        cursor: default;
+        height: 0;
+        pointer-events: none;
+    }
+    .drag-and-drop-img{
+        height: 150px;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+
+            opacity: 0;
+            height: 30px;
+            width: 30px;
+            background-image: url('../../../libs/img/close-1.svg');
+            background-position: center;
+            background-size: cover;
+            transition: .3s;
+        }
+        &:hover{
+            &::after{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+.drag-and-drop-active{
+    &::after{
+        content: 'Перетащите изображение';
+        position: absolute;
+        display: none;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: calc(50% + -11px);
+        z-index: 1;
+        cursor: default;
+        height: 0;
+        pointer-events: none;
+    }
+}

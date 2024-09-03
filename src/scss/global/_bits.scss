@@ -1,0 +1,71 @@
+// SCSS Bits and Variables.
+//-------------------------------- VARIABLES
+//basic colors
+$white:     #ffffff;
+$black:     #000000;
+$green:     #00ff00;
+$orange:    #ffa500;
+$ccc :      #cccccc;
+$blue:      #0000ff;
+$red:       #ff0000;
+$pgeneral:  #3a4249;
+$eee : #eee;
+$text :#102c3a;
+$span :#222222;
+
+
+//basics colors of project
+$green1: #1f831a;
+$green2: #1e8219;
+$greenFooter: #0c6108;
+$greenForm: #d2e6d1;
+$whiteF4: #f4f4f4;
+$text1 : #373737;
+$text2 : #5b5b5b;
+$priceLine: #63a85f;
+//navigation and footer color
+
+
+// // Defining values
+$screen-xs-min: 455px;
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-xl-min: 1025px;
+$screen-contain-min: 1190px;
+$screen-xl-lg-min:1200px;
+$screen-xxl-min: 1440px;
+$screen-lg-min: 1600px;
+$screen-fhd-min: 1900px;
+$screen-lgx-min: 1920px;
+$screen-md-max: ($screen-lg-min - 1);
+
+// $screen-sm-min:425px;
+// $screen-xs-max: ($screen-sm-min - 1);
+// $screen-md-min: 768px;
+// $screen-sm-max: ($screen-md-min - 1);
+// $screen-lg-min: 1024px;
+// $screen-xlg-min: 1200px;
+// $screen-md-max: ($screen-lg-min - 1);
+
+
+// // Defining values
+// $screen-sm-min: 768px;
+// $screen-xs-max: ($screen-sm-min - 1);
+// $screen-md-min: 992px;
+// $screen-sm-max: ($screen-md-min - 1);
+// $screen-lg-min: 1200px;
+// $screen-md-max: ($screen-lg-min - 1);
+
+// // Usage
+// @media (min-width:$screen-lgx-min) {}
+// @media (min-width: $screen-fhd-min) {}
+// @media (min-width: $screen-lg-min) {}
+// @media (min-width: $screen-xl-lg-min) {}
+// @media (min-width: $screen-contain-min) {}
+// @media (min-width: $screen-xl-min) {}
+// @media (min-width: $screen-sm-min) {}
+// @media (min-width: $screen-xs-min) {}
+
+//--------------------------------- FONTS

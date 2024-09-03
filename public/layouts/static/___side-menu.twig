@@ -1,0 +1,68 @@
+<section class="wt-side-menu">
+    <div class="wt-menu">
+        <div class="wt-title">МЕНЮ</div>
+        <ul class="wt-filters" id="accordion">
+            <li class="wt-item-menu"><span>ГЛАВНАЯ</span></li>
+            <li class="wt-item-menu opened"><span>ТОВАРЫ</span>
+                <ul>
+                    <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog">{{ side_menu_all_products }}</a></li>
+                    {% for category in categories %}
+                        <li><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog{{ '/' ~ category.slug }}">{{ category.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li class="wt-item-menu"><span>УСЛУГИ</span>
+                <ul>
+                    <li>Распиловка древесины</li>
+                    <li>Шлифовка и калибровка доски</li>
+                    <li>Сушка древесины</li>
+                </ul>
+            </li>
+            <li class="wt-item-menu"><span>ГАРАНТИЯ И ВОЗВРАТ</span></li>
+            <li class="wt-item-menu"><span>ДОСТАВКА И ОПЛАТА</span></li>
+            <li class="wt-item-menu"><span>СТАТЬИ</span></li>
+            <li class="wt-item-menu"><span>ДОСКА СОСНОВАЯ СУХАЯ ОБРЕЗНАЯ МИКC</span></li>
+            <li class="wt-item-menu"><span>ДРОБИЛЬНАЯ ЛИНИЯ</span></li>
+            <li class="wt-item-menu"><span>КАЛИБРОВКА</span></li>
+            <li class="wt-item-menu"><span>ЛИНИЯ ПО ПРОИЗВОДСТВУ ТОПЛИВНЫХ БРИКЕТОВ</span></li>
+            <li class="wt-item-menu"><span>ЛИНИЯ ПО РАСПИЛОВКЕ СОСНЫ</span></li>
+            <li class="wt-item-menu"><span>ОТПРАВКА ПРОДУКЦИИ ЗАКАЗЧИКАМ</span></li>
+            <li class="wt-item-menu"><span>ПОГОНАЖ</span></li>
+            <li class="wt-item-menu"><span>ПОГОНАЖНЫЕ ИЗДЕЛИЯ</span></li>
+            <li class="wt-item-menu"><span>РАСПИЛОВКА</span></li>
+            <li class="wt-item-menu"><span>СЫРЬЕ</span></li>
+        </ul>
+        <div class="wt-show-more">Развернуть</div>
+        <ul class="wt-filters">
+            <li class="wt-item-menu"><span>О КОМПАНИИ</span></li>
+            <li class="wt-item-menu"><span>СЕРТИФИКАТЫ</span></li>
+            <li class="wt-item-menu"><span>ЗАКАЗЧИКАМ</span></li>
+            <li class="wt-item-menu"><span>ДИЛЕРАМ</span></li>
+            <li class="wt-item-menu"><span>ОТЗЫВЫ О КОМПАНИИ</span></li>
+            <li class="wt-item-menu"><span>КОНТАКТЫ</span></li>
+        </ul>
+    </div>
+    <div class="wt-contacts">
+        <div class="wt-title">КОНТАКТЫ</div>
+        <ul class="wt-list-contacts">
+            <li class="wt-item-contact">АДРЕС
+                <p>Украина,  Житомирская область,  Олевск,  11001,  ул. Герцена, 19</p>
+                <a href="">Показать на карте</a>
+            </li>
+            <li class="wt-item-contact">РУКОВОДИТЕЛЬ
+                <p>Генеральный директор компании <span>Хаддад Бассам Антониус</span></p>
+                <p>Директор производства <span>Хаддад Георг Антониус</span></p>
+            </li>
+            <li class="wt-item-contact">ТЕЛЕФОНЫ КОМПАНИИ
+                <p>Дирекция</p>
+                <p class="wt-tel">+380 <span>Показать телефоны</span></p>
+                <p class="wt-description">При заказе сообщите менеджеру о том, что информацию вы узнали на Allbiz. Благодарим за то, что покупаете с Allbiz!</p>
+            </li>
+            <li class="wt-item-contact">ИНТЕРНЕТ
+                <p class="wt-adress">Email: <span>wt-olevsk@ukr.net</span></p>
+                <p class="wt-adress">Сайт:  <span>woodtrade.all.biz</span></p>
+                <p class="wt-adress">Сайт:  <span>woodtrade.all.biz</span></p>
+            </li>
+        </ul>
+    </div>
+</section>

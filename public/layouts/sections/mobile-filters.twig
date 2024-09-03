@@ -1,0 +1,8 @@
+<section class="wt-mobile-filters">
+    <div class="wt-close" id="filters_mobile_close"></div>
+    <ul class="wt-filters"><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog">{{ mobile_filters_proucts }}</a>
+        {% for category in categories %}
+            <li class="wt-item-filters"><a href="{{ home_url }}{{ session.language == baselocale ? '' :  session.language~'/' }}catalog{{ '/' ~ category.slug }}">{{ category.name }}</a></li>
+        {% endfor %}
+    </ul>
+</section>
